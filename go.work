@@ -2,8 +2,11 @@ go 1.19
 
 use (
 	.
-	./fileparser
-	./filewalker
-	./models
-	./zincinject
+	./indexer/fileparser
+	./indexer/filewalker
+	./indexer/models
+	./indexer/zincinject
+	./visualizer
+	./visualizer/db
+	./visualizer/handlers
 )
