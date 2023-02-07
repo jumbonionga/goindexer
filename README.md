@@ -1,2 +1,2 @@
 # goindexer
-Indexer based on Go and using ZyncSearch
+Indexer based on Go and using ZincSearch
