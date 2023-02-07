@@ -149,6 +149,7 @@ func entryCleaner(entry string, entryType string) string {
 	case "email":
 		{
 			cleanEntry = strings.Trim(entry, " <>")
+			cleanEntry = strings.ReplaceAll(cleanEntry, " <.", ", ")
 			cleanEntry = strings.ReplaceAll(cleanEntry, "\"", "")
 			cleanEntry = strings.ReplaceAll(cleanEntry, ":@", "@")
 			cleanEntry = strings.ReplaceAll(cleanEntry, "'.'", ".")
