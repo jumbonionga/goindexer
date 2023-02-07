@@ -15,7 +15,7 @@ func main() {
 	port := 3000
 
 	router.Get("/api/example/", handlers.GetTest)
-	router.Post("/api/example/", nil)
+	router.Post("/api/example/", handlers.PostTest)
 	router.Post("/api/search/*", nil)
 
 	fmt.Printf("Listening on port %d", port)
