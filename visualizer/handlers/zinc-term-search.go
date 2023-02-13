@@ -2,7 +2,8 @@ package handlers
 
 import (
 	"db"
-	"fmt"
+	"encoding/json"
+	"govisualizer/models"
 	"io"
 	"log"
 	"net/http"
@@ -12,6 +13,9 @@ import (
 )
 
 func Search(rw http.ResponseWriter, r *http.Request) {
+	var result2 map[string]map[string]interface{}
+	var hits []models.Message
+
 	rw.Header().Set("Content-type", "application/json")
 
 	query := chi.URLParam(r, "*")
@@ -20,10 +24,15 @@ func Search(rw http.ResponseWriter, r *http.Request) {
 	result := db.Search(query)
 	defer result.Body.Close()
 	body, err := io.ReadAll(result.Body)
+
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Fprintln(rw, string(body))
+	json.Unmarshal([]byte(body), &result2)
+
+	jsonData, _ := json.Marshal(result2["hits"]["hits"])
+	json.Unmarshal([]byte(jsonData), &hits)
+	models.SendData(rw, hits)
 
 }
 
