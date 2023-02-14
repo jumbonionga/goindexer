@@ -1,4 +1,4 @@
-package models
+package apimodels
 
 import (
 	"encoding/json"
@@ -24,6 +24,7 @@ func CreateDefaultResponse(rw http.ResponseWriter) Response {
 
 func (resp *Response) Send() {
 	resp.respWrite.Header().Set("Content-type", resp.contentType)
+	resp.respWrite.Header().Set("Access-Control-Allow-Origin", "*")
 	resp.respWrite.WriteHeader(resp.Status)
 
 	responseJson, _ := json.Marshal(&resp)

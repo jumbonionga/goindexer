@@ -1,0 +1,126 @@
+{
+    "status": 200,
+    "data": [
+      {
+        "_id": "1W427X5yvwA",
+        "_source": {
+          "date": "Tue, 8 May 2001 06:14:27 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "phillip.allen@enron.com, john.arnold@enron.com, jennifer.denny@enron.com,  david.forster@enron.com, kimberly.hillis@enron.com,  louise.kitchen@enron.com, a.martin@enron.com,  torrey.moorer@enron.com, matt.motsinger@enron.com,  scott.neal@enron.com, savita.puthigai@enron.com,  jennifer.rosado@enron.com, tammie.schoppe@enron.com,  s.shively@enron.com, tara.sweitzer@enron.com, andy.zipper@enron.com",
+          "subject": "EOL Average Deal Count by Trader and Product as of 5-7-01",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      },
+      {
+        "_id": "1W427WVkWQg",
+        "_source": {
+          "date": "Wed, 2 May 2001 07:54:09 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "phillip.allen@enron.com, john.arnold@enron.com, jennifer.denny@enron.com,  david.forster@enron.com, kimberly.hillis@enron.com,  louise.kitchen@enron.com, a.martin@enron.com,  torrey.moorer@enron.com, matt.motsinger@enron.com,  scott.neal@enron.com, savita.puthigai@enron.com,  jennifer.rosado@enron.com, tammie.schoppe@enron.com,  s.shively@enron.com, tara.sweitzer@enron.com, andy.zipper@enron.com",
+          "subject": "EOL Average Deal Count by Trader and Product as of 5-1-01",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      },
+      {
+        "_id": "1W3ZeoVQUOk",
+        "_source": {
+          "date": "Wed, 9 May 2001 01:44:00 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "phillip.allen@enron.com, john.arnold@enron.com, jennifer.denny@enron.com,  david.forster@enron.com, kimberly.hillis@enron.com,  louise.kitchen@enron.com, thomas.martin@enron.com,  torrey.moorer@enron.com, matt.motsinger@enron.com,  scott.neal@enron.com, savita.puthigai@enron.com,  jennifer.rosado@enron.com, tammie.schoppe@enron.com,  hunter.shively@enron.com, tara.sweitzer@enron.com,  andy.zipper@enron.com",
+          "subject": "EOL Average Deal Count by Trader and Product as of 5-8-01",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      },
+      {
+        "_id": "1W3ZefwxevK",
+        "_source": {
+          "date": "Mon, 19 Jun 2000 08:29:00 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "hunter.shively@enron.com, phillip.allen@enron.com, thomas.martin@enron.com,  fletcher.sturm@enron.com, john.arnold@enron.com,  scott.neal@enron.com",
+          "subject": "Average EOL and NON-EOL deals per day Cc: jeffrey.gossett@enron.com, brent.price@enron.com, sheri.thomas@enron.com, \tjennifer.denny@enron.com, torrey.moorer@enron.com",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      },
+      {
+        "_id": "1W3ZebEGbBe",
+        "_source": {
+          "date": "Wed, 9 May 2001 01:44:00 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "phillip.allen@enron.com, john.arnold@enron.com, jennifer.denny@enron.com,  david.forster@enron.com, kimberly.hillis@enron.com,  louise.kitchen@enron.com, thomas.martin@enron.com,  torrey.moorer@enron.com, matt.motsinger@enron.com,  scott.neal@enron.com, savita.puthigai@enron.com,  jennifer.rosado@enron.com, tammie.schoppe@enron.com,  hunter.shively@enron.com, tara.sweitzer@enron.com,  andy.zipper@enron.com",
+          "subject": "EOL Average Deal Count by Trader and Product as of 5-8-01",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      },
+      {
+        "_id": "1W3Ze5gqa1a",
+        "_source": {
+          "date": "Mon, 19 Jun 2000 08:29:00 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "hunter.shively@enron.com, phillip.allen@enron.com, thomas.martin@enron.com,  fletcher.sturm@enron.com, john.arnold@enron.com,  scott.neal@enron.com",
+          "subject": "Average EOL and NON-EOL deals per day Cc: jeffrey.gossett@enron.com, brent.price@enron.com, sheri.thomas@enron.com, \tjennifer.denny@enron.com, torrey.moorer@enron.com",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      },
+      {
+        "_id": "1W3ZdKvItoI",
+        "_source": {
+          "date": "Wed, 9 May 2001 01:44:00 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "phillip.allen@enron.com, john.arnold@enron.com, jennifer.denny@enron.com,  david.forster@enron.com, kimberly.hillis@enron.com,  louise.kitchen@enron.com, thomas.martin@enron.com,  torrey.moorer@enron.com, matt.motsinger@enron.com,  scott.neal@enron.com, savita.puthigai@enron.com,  jennifer.rosado@enron.com, tammie.schoppe@enron.com,  hunter.shively@enron.com, tara.sweitzer@enron.com,  andy.zipper@enron.com",
+          "subject": "EOL Average Deal Count by Trader and Product as of 5-8-01",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      },
+      {
+        "_id": "1W3ZdJN9rYA",
+        "_source": {
+          "date": "Mon, 19 Jun 2000 08:29:00 -0700 (PDT)",
+          "From": "matt.motsinger@enron.com",
+          "to": "hunter.shively@enron.com, phillip.allen@enron.com, thomas.martin@enron.com,  fletcher.sturm@enron.com, john.arnold@enron.com,  scott.neal@enron.com",
+          "subject": "Average EOL and NON-EOL deals per day Cc: jeffrey.gossett@enron.com, brent.price@enron.com, sheri.thomas@enron.com, \tjennifer.denny@enron.com, torrey.moorer@enron.com",
+          "attachment": "",
+          "bcc": "",
+          "cc": "",
+          "body": "",
+          "message-id": "",
+          "path": ""
+        }
+      }
+    ],
+    "message": ""
+  }

@@ -7,6 +7,7 @@ use (
 	./api-server/handlers
 	./api-server/models
 	./indexer/fileparser
+	./indexer/filewalker
 	./indexer/models
 	./indexer/zincinject
 )

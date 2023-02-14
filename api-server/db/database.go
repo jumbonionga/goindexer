@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-const url = "http://localhost:4080/api/enron"
+const url = "http://localhost:4080/api/enron_test"
 const user = "admin"
 const password = "Complexpass#123"
 

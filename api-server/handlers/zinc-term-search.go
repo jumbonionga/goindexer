@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"api-server/models"
+	"apimodels"
 	"db"
 	"encoding/json"
 	"io"
@@ -14,7 +14,7 @@ import (
 
 func Search(rw http.ResponseWriter, r *http.Request) {
 	var result2 map[string]map[string]interface{}
-	var hits []models.Message
+	var hits []apimodels.Message
 
 	rw.Header().Set("Content-type", "application/json")
 
@@ -32,7 +32,7 @@ func Search(rw http.ResponseWriter, r *http.Request) {
 
 	jsonData, _ := json.Marshal(result2["hits"]["hits"])
 	json.Unmarshal([]byte(jsonData), &hits)
-	models.SendData(rw, hits)
+	apimodels.SendData(rw, hits)
 
 }
 

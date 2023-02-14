@@ -1,4 +1,4 @@
-package models
+package apimodels
 
 type Message struct {
 	Id     string `json:"_id"`
