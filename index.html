@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Go Viewer Go!</title>
+</head>
+
+<body>
+    <div id="app" class="m-6 font-sans">
+        <h1 class="uppercase font-bold text-2xl">Go viewer Go!</h1>
+        <input type="text" v-model="qstring" required class="border-b w-1/2 bg-gray-200 py-1 m-2">
+        <button @click="allMessages(qstring)" class="bg-gray-300 uppercase py-1 px-2 font-bold rounded-md hover:bg-gray-700 hover:text-white">Search</button>
+        <div v-if="!showMessage" class="rounded-md">
+            <table v-if="totalResults" class="table-fixed min-w-full rounded-md">
+                <thead class="bg-gray-500 text-white">
+                    <tr>
+                        <th class="w-1/6">Date</th>
+                        <th class="w-1/6">From</th>
+                        <th class="w-1/6 overflow-ellipsis">To</th>
+                        <th>Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-if="totalResults" v-for="item in totalResults.data" :key="item._id" @click="message(item._id)" class="border-b border-gray-600">
+                        <td class="px-4">
+                            {{ item._source.date }}
+                        </td>
+                        <td class="px-4 border-l">
+                            {{ item._source.From }}
+                        </td>
+                        <td class="px-4 border-l overflow-ellipsis">
+                            {{ item._source.to }}
+                        </td>
+                        <td class="px-4 border-l">
+                            {{ item._source.subject }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div v-if="showMessage" v-if="singleMessage">
+            <button @click="toggleMessage" class="bg-gray-300 uppercase py-1 px-2 font-bold hover:bg-gray-700 hover:text-white rounded-md">Close message</button>
+            <div v-for="message in singleMessage.data" :key="message._id" class="py-2 px-4 m-6 bg-gray-200 border-black rounded-md">
+                <p class="text-sm italic"><span class="font-bold">Path:</span> {{message._source.path}}</p>
+                <p><span class="font-bold">Date:</span> {{message._source.date}}</p>
+                <p><span class="font-bold">From:</span> {{message._source.From}}</p>
+                <p><span class="font-bold">To:</span> {{message._source.to}}</p>
+                <p v-if="message._source.cc"><span class="font-bold">CC:</span> {{message._source.cc}}</p>
+                <p v-if="message._source.bcc"><span class="font-bold">BCC:</span> {{message._source.bcc}}</p>
+                <p><span class="font-bold">Subject:</span> {{message._source.subject}}</p>
+                <p><span class="font-bold">Body:</span> {{message._source.body}}</p>
+                <p class="text-sm italic"><span class="font-bold">Attachments:</span> {{message._source.attachment}}</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
