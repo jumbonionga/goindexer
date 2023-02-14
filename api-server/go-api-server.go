@@ -15,9 +15,9 @@ func main() {
 	port := 3000
 
 	router.Get("/api/example/", handlers.GetTest)
-	router.Post("/api/example/", nil)
-	router.Post("/api/search/*", nil)
+	router.Post("/api/example/", handlers.PostTest)
+	router.Get("/api/search/*", handlers.Search)
 
-	fmt.Printf("Listening on port %d", port)
+	fmt.Printf("Listening on port %d\n", port)
 	log.Fatal(http.ListenAndServe(":"+strconv.FormatInt(int64(port), 10), router))
 }

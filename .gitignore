@@ -2,7 +2,9 @@ enron_mail_20110402/
 .vscode/
 body.txt
 bodyO.txt
+*.txt
 zincsearch-api-example.txt
-goindexerchannels/
 arga/
+api-server/tmp/
 tmp/
+
