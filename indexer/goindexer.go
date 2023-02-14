@@ -3,6 +3,7 @@ package main
 import (
 	"fileparser"
 	"filewalker"
+	"fmt"
 	"models"
 	"os"
 	"zincinject"
@@ -21,21 +22,25 @@ func main() {
 	}
 
 	// Retrieve all files on the directory
+	fmt.Println("Retrieving files")
 	filePaths = filewalker.DirectoryWalk(path)
 
 	// Parse the messages
+	fmt.Println("Parsing files")
 	for _, path := range filePaths {
 		var message = fileparser.FileParser(path)
 		messages = append(messages, message)
 	}
 
-	file, error := os.Create("body.txt")
+	// Creating error log file
+	file, error := os.Create("errorlog.txt")
 	if error != nil {
 		panic(error)
 	}
 	defer file.Close()
 
 	// Inject messages
+	fmt.Println("Injecting files (errors will be saved in errorlog.txt)")
 	for _, message := range messages {
 		zincinject.ZincInject(message, file)
 	}

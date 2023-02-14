@@ -1,9 +1,9 @@
 package handlers
 
 import (
+	"api-server/models"
 	"db"
 	"encoding/json"
-	"govisualizer/models"
 	"io"
 	"log"
 	"net/http"

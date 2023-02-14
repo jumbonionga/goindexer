@@ -1,12 +1,12 @@
-go 1.19
+go 1.20
 
 use (
 	.
+	./api-server
+	./api-server/db
+	./api-server/handlers
+	./api-server/models
 	./indexer/fileparser
-	./indexer/filewalker
 	./indexer/models
 	./indexer/zincinject
-	./visualizer
-	./visualizer/db
-	./visualizer/handlers
 )

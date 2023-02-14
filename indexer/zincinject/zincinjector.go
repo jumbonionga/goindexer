@@ -24,7 +24,7 @@ func ZincInject(message models.EmailMessage, file *os.File) {
 		"Body": "` + message.GetBody() + `"
 	}`
 
-	req, err := http.NewRequest("POST", "http://localhost:4080/api/enron/_doc", strings.NewReader(data))
+	req, err := http.NewRequest("POST", "http://localhost:4080/api/enron_test/_doc", strings.NewReader(data))
 	if err != nil {
 		log.Fatal(message.GetPath())
 		log.Fatal(err)
